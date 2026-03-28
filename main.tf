@@ -17,5 +17,5 @@ terraform {
 provider "genesyscloud" {}
 
 resource "genesyscloud_routing_queue" "test_queue" {
-  name = "Test Queue from Terraform"
+  name = "queuefromRishi"
 }
