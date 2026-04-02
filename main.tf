@@ -28,8 +28,8 @@ resource "genesyscloud_architect_user_prompt" "welcome_prompt2" {
 }
 
 # 2. Queue (FIXED NAME)
-resource "genesyscloud_routing_queue" "test_queue2" {
-  name              = "queuefromRishi_v2"   # ✅ changed name
+resource "genesyscloud_routing_queue" "test_queue3" {
+  name              = "queuefromRishi_v3"   # ✅ changed name
   scoring_method    = "TimestampAndPriority"
   acw_wrapup_prompt = "MANDATORY"
   acw_timeout_ms    = 30000
