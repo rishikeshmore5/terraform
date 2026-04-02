@@ -28,13 +28,13 @@ resource "genesyscloud_architect_user_prompt" "welcome_prompt2" {
 # 2. Routing Queue (Fixed: Using flat attributes instead of acw_settings block)
 resource "genesyscloud_routing_queue" "test_queue2" {
   name                = "queuefromRishi"
-  scoring_method      = "Timestamp"
+  scoring_method      = "TimestampAndPriority"
   acw_wrapup_prompt   = "MANDATORY"
   acw_timeout_ms      = 30000
 }
 
 # 3. Data Action Integration (The Container)
-resource "genesyscloud_integration" "web_services_integration2" {
+resource "genesyscloud_integration" "web_services_integration" {
   intended_state   = "ENABLED"
   integration_type = "custom-rest-lookup-invoker"
   config {
